@@ -9,5 +9,6 @@ import java.lang.annotation.Target;
 @Target (ElementType.METHOD)
 public @interface BeforeSuite {
     String description() default "no description";
+    int priority = 0; // Запускаем раньше всех //
 
 }

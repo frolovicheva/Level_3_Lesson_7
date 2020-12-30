@@ -9,5 +9,6 @@ import java.lang.annotation.Target;
 @Target (ElementType.METHOD)
 public @interface AfterSuite {
     String description() default "no description";
+    int priority = 2147483647; // Запускаем позже всех //
 
 }

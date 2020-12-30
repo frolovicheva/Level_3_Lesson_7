@@ -8,7 +8,6 @@ import java.lang.annotation.Target;
 @Retention (RetentionPolicy.RUNTIME)
 @Target (ElementType.METHOD)
 public @interface Test {
-    String description() default "no description";
     int priority() default 5; //Очередность выполнения: от 1 - самый первый, до 10 - самый последний //
 
 
