@@ -42,13 +42,10 @@ public class Main {
             if (m.isAnnotationPresent (BeforeSuite.class)) {
                 listOfMethods.add (0,m);
             }
-        }
-        for (Method m : classMethods) {
             if (m.isAnnotationPresent (AfterSuite.class)) {
                 listOfMethods.add (m);
             }
         }
-
 
         for (Method m : listOfMethods) {
             try {
